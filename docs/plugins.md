@@ -149,6 +149,55 @@ exports.postResults = function() {};
 exports.postTest = function(passed, testInfo) {};
 
 /**
+ * This is called inside browser.get() and allows the plugin to modify any URLs
+ * the tests direct the browser to.
+ *
+ * @param {string} url The unmodified URL which the test called browser.get()
+ *     with
+ *
+ * @this {Object} bound to module.exports
+ *
+ * @throws {*} If this function throws an error, a failed assertion is added to
+ *     the test results and the original URL is used
+ *
+ * @return {string|q.Promise<string>} The modified URL or a promise which
+ *     resolves to the modified URL.  If a rejected promise is returned, a
+ *     failed assertion is added to the test results.
+ */
+exports.rewriteURL = function() {};
+
+/**
+ * This is called inside browser.get() directly after the page loads, and before
+ * angular has had time to bootstrap/synchronize. 
+ *
+ * @this {Object} bound to module.exports
+ *
+ * @throws {*} If this function throws an error, a failed assertion is added to
+ *     the test results.
+ *
+ * @return {q.Promise=} Can return a promise, in which case protractor will wait
+ *     for the promise to resolve before continuing.  If the promise is
+ *     rejected, a failed assertion is added to the test results.
+ */
+exports.onPageLoad = function() {};
+
+/**
+ * This is called inside browser.get() directly after angular is done
+ * bootstrapping/synchronizing.  If browser.ignoreSynchronization is true, this
+ * will not be called.
+ *
+ * @this {Object} bound to module.exports
+ *
+ * @throws {*} If this function throws an error, a failed assertion is added to
+ *     the test results.
+ *
+ * @return {q.Promise=} Can return a promise, in which case protractor will wait
+ *     for the promise to resolve before continuing.  If the promise is
+ *     rejected, a failed assertion is added to the test results.
+ */
+exports.onPageSync = function() {};
+
+/**
  * Used when reporting results.
  *
  * If you do not specify this property, it will be filled in with something

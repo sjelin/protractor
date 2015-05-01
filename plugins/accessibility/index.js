@@ -76,8 +76,7 @@ var entities = new Entities();
  * http://tenon.io/documentation/overview.php.
  *
  * @param {Object} context The plugin context object
- * @return {q.Promise} A promise which resolves to the results of any passed or
- *    failed tests
+ * @return {q.Promise} A promise which resolves when the audit is finished
  * @private
  */
 function runTenonIO(context) {
@@ -143,8 +142,7 @@ function runTenonIO(context) {
  * Audits page source against the Chrome Accessibility Developer Tools, if configured.
  *
  * @param {Object} context The plugin context object
- * @return {q.Promise} A promise which resolves to the results of any passed or
- *    failed tests
+ * @return {q.Promise} A promise which resolves when the audit is finished
  * @private
  */
 function runChromeDevTools(context) {
