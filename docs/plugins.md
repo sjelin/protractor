@@ -85,64 +85,136 @@ the output of Protractor by returning a results object.
 Plugins are node modules which export an object with the following API:
 
 ```js
-/*
+/**
  * Sets up plugins before tests are run. This is called after the WebDriver
  * session has been started, but before the test framework has been set up.
  *
- * @param {Object} config The plugin configuration object. Note that
- *     this is not the entire Protractor config object, just the
- *     entry in the plugins array for this plugin.
+ * @this {Object} bound to module.exports
  *
- * @return Object If an object is returned, it is merged with the Protractor
- *     result object. May return a promise.
+ * @throws {*} If this function throws an error, a failed assertion is added to
+ *     the test results.
+ *
+ * @return {q.Promise=} Can return a promise, in which case protractor will wait
+ *     for the promise to resolve before continuing.  If the promise is
+ *     rejected, a failed assertion is added to the test results.
  */
-exports.setup = function(config) {};
+exports.setup = function() {};
 
-/*
+/**
  * This is called after the tests have been run, but before the WebDriver
  * session has been terminated.
  *
- * @param {Object} config The plugin configuration object.
+ * @this {Object} bound to module.exports
  *
- * @return Object If an object is returned, it is merged with the Protractor
- *     result object. May return a promise.
+ * @throws {*} If this function throws an error, a failed assertion is added to
+ *     the test results.
+ *
+ * @return {q.Promise=} Can return a promise, in which case protractor will wait
+ *     for the promise to resolve before continuing.  If the promise is
+ *     rejected, a failed assertion is added to the test results.
  */
-exports.teardown = function(config) {};
+exports.teardown = function() {};
 
-/*
+/**
  * Called after the test results have been finalized and any jobs have been
  * updated (if applicable).
  *
- * @param {Object} config The plugin configuration object.
+ * @this {Object} bound to module.exports
  *
- * @return Return values are ignored.
+ * @throws {*} If this function throws an error, it is outputted to the console
+ *
+ * @return {q.Promise=} Can return a promise, in which case protractor will wait
+ *     for the promise to resolve before continuing.  If the promise is
+ *     rejected, a failed assertion is added to the test results.
  */
-exports.postResults = function(config) {};
+exports.postResults = function() {};
 
 /**
  * Called after each test block (in Jasmine, this means an `it` block)
  * completes.
  *
- * @param {Object} config The plugin configuration object.
  * @param {boolean} passed True if the test passed.
  * @param {Object} testInfo information about the test which just ran.
  *
- * @return Object If an object is returned, it is merged with the Protractor
- *     result object. May return a promise.
+ * @this {Object} bound to module.exports
+ *
+ * @throws {*} If this function throws an error, a failed assertion is added to
+ *     the test results.
+ *
+ * @return {q.Promise=} Can return a promise, in which case protractor will wait
+ *     for the promise to resolve before outputting test results.  Protractor
+ *     will *not* wait before executing the next test, however.  If the promise
+ *     is rejected, a failed assertion is added to the test results.
  */
-exports.postTest = function(config, passed, testInfo) {};
+exports.postTest = function(passed, testInfo) {};
 
 /**
  * Used when reporting results.
+ *
+ * If you do not specify this property, it will be filled in with something
+ * reasonable (e.g. the plugin's path)
+ *
  * @type {string}
  */
 exports.name = '';
 ```
 
-Each of these exported properties are totally optional.
+Each of these exported properties are optional.
 
-The protractor results object follows the format specified in
-the [Framework documentation](../lib/frameworks/README.md).
+### Provided properties and functions
+
+Extra properties are added to your `module.exports` when Protractor loads your
+plugin.  These allow your plugin to do things like access its configuration
+block or add test results.  They are as follows:
+
+```js
+/**
+ * The plugin configuration object. Note that this is not the entire
+ * Protractor config object, just the entry in the plugins array for this
+ * plugin.
+ *
+ * @type {Object}
+ */
+exports.config;
+
+/**
+ * Adds a failed assertion to the test's results.
+ *
+ * @param {string} message The error message for the failed assertion
+ * @param {Object=} options Some optional extra information about the assertion:
+ *     - {string=} specName The name of the spec which this assertion belongs
+ *          to.  Defaults to `PLUGIN_NAME + ' Plugin Tests'`
+ *     - {string=} stackTrace The stack trace for the failure.  Defaults to
+ *          undefined.
+ *
+ * @throws {Error} Throws an error if called after results have been reported
+ */
+exports.addFailure(message, options);
+
+/**
+ * Adds a passed assertion to the test's results.
+ *
+ * @param {Object=} options Some optional extra information about the assertion:
+ *     - {string=} specName The name of the spec which this assertion belongs
+ *          to.  Defaults to `PLUGIN_NAME + ' Plugin Tests'`
+ *
+ * @throws {Error} Throws an error if called after results have been reported
+ */
+exports.addSuccess(options);
+
+/**
+ * Warns the user that something is problematic.
+ *
+ * @param {string} message The message to warn the user about
+ * @param {Object=} options Some optional extra information about the warning:
+ *     - {string=} specName The name of the spec in which this warning was
+ *          triggered.
+ */
+exports.addWarning(message, options);
+```
+
+If you specify any of these properties in your plugin file, they will be
+overwritten.
 
 Accessibility Plugin
 --------------------
