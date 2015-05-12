@@ -1,8 +1,7 @@
 var env = require('../environment.js'),
     q = require('q');
 
-// A small suite to make sure the basic functionality of plugins work
-// Tests the (potential) edge case of exactly one plugin being used
+// Make sure that borwser-related plugin hooks work with browser sync off
 exports.config = {
   seleniumAddress: env.seleniumAddress,
 
@@ -10,7 +9,7 @@ exports.config = {
 
   // Spec patterns are relative to this directory.
   specs: [
-    'specs/browser_get_spec.js'
+    'specs/browser_get_wait_spec.js'
   ],
 
   capabilities: env.capabilities,
@@ -33,8 +32,8 @@ exports.config = {
           protractor.ON_PAGE_LOAD = true;
         });
       },
-      onPageSync: function() {
-        this.addFailure('onPageSync should not have ran when ' +
+      onPageStable: function() {
+        this.addFailure('onPageStable should not have ran when ' +
             'browser.ignoreSynchronization is true.');
       },
       teardown: function() {

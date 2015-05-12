@@ -27,6 +27,7 @@ var passingTests = [
   'node lib/cli.js spec/plugins/cucumberPostTestConf.js',
   'node lib/cli.js spec/plugins/browserGetSyncedConf.js',
   'node lib/cli.js spec/plugins/browserGetUnsyncedConf.js',
+  'node lib/cli.js spec/plugins/waitForAngularConf.js',
   'node lib/cli.js spec/interactionConf.js',
   'node lib/cli.js spec/directConnectConf.js',
   'node lib/cli.js spec/restartBrowserBetweenTestsConf.js',
