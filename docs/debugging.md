@@ -70,7 +70,7 @@ currently pending tasks on the WebDriver control flow.
 -- WebDriver control flow schedule
  |- waiting for debugger to attach
  |---    at [object Object].<anonymous> (failure_spec.js:13:13)
- |- Protractor.waitForAngular()
+ |- Protractor.waitForStableStatus()
  |---    at [object Object].<anonymous> (failure_spec.js:16:59)
 wd-debug>
 ```
@@ -191,8 +191,8 @@ matching a locator.
 
 Element explorer will start chrome by default. However, you can specify
 another browser, change browser settings, or specify any other config that you
-normally would with your protractor test. To do this, pass configs to 
-protractor like you normally would, 
+normally would with your protractor test. To do this, pass configs to
+protractor like you normally would,
 but with the `--elementExplorer` flag set:
 
     protractor [configFile] [options] --elementExplorer
@@ -201,11 +201,11 @@ For example, to connect to ChromeDriver directly, use
 
     protractor --directConnect --elementExplorer
 
-Element explore will ignore your specs, not set up your framework (e.g. jasmine, 
+Element explore will ignore your specs, not set up your framework (e.g. jasmine,
 mocha, cucumber), and only allow you to pass in 1 capability, but will honor
 every other parameter in your config.
 
-Note `baseUrl` is used here as the initial page, i.e. element explorer will try 
+Note `baseUrl` is used here as the initial page, i.e. element explorer will try
 to navigate to `baseUrl` automatically on start.
 
 

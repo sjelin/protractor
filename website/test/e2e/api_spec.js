@@ -73,7 +73,7 @@ describe('Api', function() {
     expect(apiPage.title.getText()).toBe('element(locator) View code');
     expect(browser.getCurrentUrl()).toMatch(/api\?view=ElementFinder/);
   });
-  
+
   it('should show child functions', function() {
     // Given that you go to element.all().
     apiPage.clickOnMenuItem('element.all(locator)');
@@ -114,7 +114,7 @@ describe('Api', function() {
 
     // Then ensure the child functions are shown.
     expect(apiPage.getChildFunctionNames()).toEqual([
-      'waitForAngular', 'findElement', 'findElements', 'isElementPresent',
+      'waitForAngular', 'waitForStableStatus', 'findElement', 'findElements', 'isElementPresent',
       'addMockModule', 'clearMockModules', 'removeMockModule',
       'getRegisteredMockModules', 'get', 'refresh', 'navigate', 'setLocation',
       'getLocationAbsUrl', 'debugger', 'enterRepl', 'pause']);

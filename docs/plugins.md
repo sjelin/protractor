@@ -168,7 +168,7 @@ exports.rewriteURL = function() {};
 
 /**
  * This is called inside browser.get() directly after the page loads, and before
- * angular has had time to bootstrap/synchronize. 
+ * angular has had time to bootstrap/synchronize.
  *
  * @this {Object} bound to module.exports
  *
@@ -198,10 +198,10 @@ exports.onPageLoad = function() {};
 exports.onPageStable = function() {};
 
 /**
- * Between every webdriver action, Protractor calls browser.waitForAngular() to
+ * Between every webdriver action, Protractor calls browser.waitForStableStatus() to
  * make sure that Angular has no outstanding $http or $timeout calls.
  * You can use waitForPromise() to have Protractor additionally wait for your
- * custom promise to be resolved inside of browser.waitForAngular().
+ * custom promise to be resolved inside of browser.waitForStableStatus().
  *
  * @this {Object} bound to module.exports
  *
@@ -218,7 +218,7 @@ exports.onPageStable = function() {};
 exports.waitForPromise = function() {};
 
 /**
- * Between every webdriver action, Protractor calls browser.waitForAngular() to
+ * Between every webdriver action, Protractor calls browser.waitForStableStatus() to
  * make sure that Angular has no outstanding $http or $timeout calls.
  * You can use waitForCondition() to have Protractor additionally wait for your
  * custom condition to be truthy.
