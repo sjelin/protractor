@@ -2,10 +2,9 @@ var env = require('./environment.js');
 
 // The main suite of Protractor tests.
 exports.config = {
-  bstackUser: process.env.BROWSER_STACK_USERNAME,
-  bstackKey: process.env.BROWSER_STACK_ACCESS_KEY,
+  seleniumAddress: env.seleniumAddress,
 
-  framework: 'jasmine',
+  framework: 'jasmine2',
 
   // Spec patterns are relative to this directory.
   specs: [
@@ -20,6 +19,11 @@ exports.config = {
   capabilities: env.capabilities,
 
   baseUrl: env.baseUrl,
+
+  jasmineNodeOpts: {
+    isVerbose: true,
+    realtimeFailure: true
+  },
 
   params: {
     login: {
