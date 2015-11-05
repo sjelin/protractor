@@ -2,7 +2,8 @@ var env = require('./environment.js');
 
 // The main suite of Protractor tests.
 exports.config = {
-  seleniumAddress: env.seleniumAddress,
+  bstackUser: process.env.BROWSER_STACK_USERNAME,
+  bstackKey: process.env.BROWSER_STACK_ACCESS_KEY,
 
   framework: 'jasmine2',
 
@@ -32,3 +33,4 @@ exports.config = {
     }
   }
 };
+exports.config.capabilities['browserstack.local'] = true;
