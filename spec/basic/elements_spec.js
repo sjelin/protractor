@@ -199,6 +199,29 @@ describe('ElementFinder', function() {
     expect(usernameInput.equals(usernameInput)).toEqual(true);
     expect(usernameInput.equals(name)).toEqual(false);
   });
+
+  describe('missing element handling', function () {
+    it('should return false for isDisplayed()', function() {
+      browser.get('index.html#/form');
+
+      var missingElement = $('#MISSING');
+      expect(missingElement.isDisplayed()).toBe(false);
+    });
+
+    it('should return false for isSelected()', function() {
+      browser.get('index.html#/form');
+
+      var missingElement = $('#MISSING');
+      expect(missingElement.isSelected()).toBe(false);
+    });
+
+    it('should return false for isSelected()', function() {
+      browser.get('index.html#/form');
+
+      var missingElement = $('#MISSING');
+      expect(missingElement.isEnabled()).toBe(false);
+    });
+  });
 });
 
 describe('ElementArrayFinder', function() {
