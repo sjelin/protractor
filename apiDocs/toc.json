@@ -21,7 +21,7 @@
         },
         "tagName": "param",
         "description": "",
-        "startingLine": 94,
+        "startingLine": 96,
         "typeExpression": "webdriver.WebDriver",
         "type": {
           "type": "NameExpression",
@@ -46,7 +46,7 @@
         },
         "tagName": "param",
         "description": "A base URL to run get requests against.",
-        "startingLine": 95,
+        "startingLine": 97,
         "typeExpression": "string=",
         "type": {
           "type": "NameExpression",
@@ -73,7 +73,7 @@
         },
         "tagName": "param",
         "description": "Selector element that has an ng-app in scope.",
-        "startingLine": 96,
+        "startingLine": 98,
         "typeExpression": "string=",
         "type": {
           "type": "NameExpression",
@@ -100,7 +100,7 @@
         },
         "tagName": "param",
         "description": "Whether Protractor should stop tracking outstanding $timeouts.",
-        "startingLine": 98,
+        "startingLine": 100,
         "typeExpression": "boolean=",
         "type": {
           "type": "NameExpression",
@@ -142,7 +142,7 @@
       },
       "tagName": "returns",
       "description": "A promise which resolves to the\ncapabilities object.",
-      "startingLine": 232,
+      "startingLine": 234,
       "typeExpression": "webdriver.promise.Promise",
       "type": {
         "type": "NameExpression",
@@ -173,7 +173,7 @@
         },
         "tagName": "param",
         "description": "Whether to navigate to current url on\ncreation",
-        "startingLine": 243,
+        "startingLine": 245,
         "typeExpression": "boolean",
         "type": {
           "type": "NameExpression",
@@ -198,7 +198,7 @@
         },
         "tagName": "param",
         "description": "Whether to apply same mock modules on\ncreation",
-        "startingLine": 245,
+        "startingLine": 247,
         "typeExpression": "boolean",
         "type": {
           "type": "NameExpression",
@@ -224,7 +224,7 @@
       },
       "tagName": "returns",
       "description": "A browser instance.",
-      "startingLine": 247,
+      "startingLine": 249,
       "typeExpression": "Browser",
       "type": {
         "type": "NameExpression",
@@ -269,7 +269,7 @@
         },
         "tagName": "param",
         "description": "An optional description to be added to webdriver logs.",
-        "startingLine": 323,
+        "startingLine": 327,
         "typeExpression": "string=",
         "type": {
           "type": "NameExpression",
@@ -297,7 +297,7 @@
       },
       "tagName": "returns",
       "description": "A promise that will resolve to the scripts return value.",
-      "startingLine": 325,
+      "startingLine": 329,
       "typeExpression": "!webdriver.promise.Promise",
       "type": {
         "type": "NameExpression",
@@ -328,7 +328,7 @@
       },
       "tagName": "returns",
       "description": "A promise that will be resolved to the located [<code ng-non-bindable>webdriver.WebElement</code>](webdriver.WebElement).",
-      "startingLine": 425,
+      "startingLine": 429,
       "typeExpression": "!webdriver.promise.Promise",
       "type": {
         "type": "NameExpression",
@@ -359,7 +359,7 @@
       },
       "tagName": "returns",
       "description": "A promise that will be resolved to an array of the located [<code ng-non-bindable>webdriver.WebElement</code>](webdriver.WebElement)s.",
-      "startingLine": 434,
+      "startingLine": 438,
       "typeExpression": "!webdriver.promise.Promise",
       "type": {
         "type": "NameExpression",
@@ -390,7 +390,7 @@
       },
       "tagName": "returns",
       "description": "A promise that will resolve to whether the element is present on the page.",
-      "startingLine": 443,
+      "startingLine": 447,
       "typeExpression": "!webdriver.promise.Promise",
       "type": {
         "type": "NameExpression",
@@ -423,7 +423,7 @@
         },
         "tagName": "param",
         "description": "The name of the module to load or override.",
-        "startingLine": 470,
+        "startingLine": 474,
         "typeExpression": "!string",
         "type": {
           "type": "NameExpression",
@@ -449,7 +449,7 @@
         },
         "tagName": "param",
         "description": "The JavaScript to load the module. Note that this will be executed in the browser context, so it cannot access variables from outside its scope.",
-        "startingLine": 471,
+        "startingLine": 475,
         "typeExpression": "!string|Function",
         "type": {
           "type": "TypeUnion",
@@ -485,7 +485,7 @@
         },
         "tagName": "param",
         "description": "Any additional arguments will be provided to the script and may be referenced using the `arguments` object.",
-        "startingLine": 474,
+        "startingLine": 478,
         "typeExpression": "...*",
         "type": {
           "type": "AllLiteral",
@@ -527,7 +527,7 @@
         },
         "tagName": "param",
         "description": "The name of the module to remove.",
-        "startingLine": 497,
+        "startingLine": 501,
         "typeExpression": "!string",
         "type": {
           "type": "NameExpression",
@@ -561,7 +561,7 @@
       },
       "tagName": "returns",
       "description": "The list of mock modules.",
-      "startingLine": 509,
+      "startingLine": 513,
       "typeExpression": "Array.<!string|Function>",
       "type": {
         "type": "TypeApplication",
@@ -612,7 +612,7 @@
         },
         "tagName": "param",
         "description": "Destination URL.",
-        "startingLine": 533,
+        "startingLine": 539,
         "typeExpression": "string",
         "type": {
           "type": "NameExpression",
@@ -637,7 +637,7 @@
         },
         "tagName": "param",
         "description": "Number of milliseconds to wait for Angular to start.",
-        "startingLine": 534,
+        "startingLine": 540,
         "typeExpression": "number=",
         "type": {
           "type": "NameExpression",
@@ -673,7 +673,7 @@
         },
         "tagName": "param",
         "description": "Number of milliseconds to wait for Angular to start.",
-        "startingLine": 653,
+        "startingLine": 659,
         "typeExpression": "number=",
         "type": {
           "type": "NameExpression",
@@ -717,7 +717,7 @@
         },
         "tagName": "param",
         "description": "In page URL using the same syntax as $location.url()",
-        "startingLine": 684,
+        "startingLine": 690,
         "typeExpression": "string",
         "type": {
           "type": "NameExpression",
@@ -743,7 +743,7 @@
       },
       "tagName": "returns",
       "description": "A promise that will resolve once page has been changed.",
-      "startingLine": 685,
+      "startingLine": 691,
       "typeExpression": "!webdriver.promise.Promise",
       "type": {
         "type": "NameExpression",
@@ -775,7 +775,7 @@
       },
       "tagName": "returns",
       "description": "The current absolute url from\nAngularJS.",
-      "startingLine": 705,
+      "startingLine": 711,
       "typeExpression": "webdriver.promise.Promise<string>",
       "type": {
         "type": "TypeApplication",
@@ -831,7 +831,7 @@
         },
         "tagName": "param",
         "description": "Optional port to use for the debugging\nprocess",
-        "startingLine": 758,
+        "startingLine": 764,
         "typeExpression": "number=",
         "type": {
           "type": "NameExpression",
@@ -868,7 +868,7 @@
         },
         "tagName": "param",
         "description": "Optional port to use for the debugging\nprocess",
-        "startingLine": 793,
+        "startingLine": 799,
         "typeExpression": "number=",
         "type": {
           "type": "NameExpression",
@@ -1431,7 +1431,7 @@
       },
       "tagName": "returns",
       "description": "A promise which resolves to the number of elements matching the locator.",
-      "startingLine": 414,
+      "startingLine": 415,
       "typeExpression": "!webdriver.promise.Promise",
       "type": {
         "type": "NameExpression",
@@ -1464,7 +1464,7 @@
       },
       "tagName": "returns",
       "description": "",
-      "startingLine": 442,
+      "startingLine": 443,
       "typeExpression": "webdriver.Locator",
       "type": {
         "type": "NameExpression",
@@ -1498,7 +1498,7 @@
         },
         "tagName": "param",
         "description": "",
-        "startingLine": 513,
+        "startingLine": 515,
         "typeExpression": "function(Array.<ElementFinder>)",
         "type": {
           "type": "FunctionType",
@@ -1537,7 +1537,7 @@
         },
         "tagName": "param",
         "description": "",
-        "startingLine": 514,
+        "startingLine": 516,
         "typeExpression": "function(Error)",
         "type": {
           "type": "FunctionType",
@@ -1568,7 +1568,7 @@
       },
       "tagName": "returns",
       "description": "A promise which will resolve to an array of ElementFinders represented by the ElementArrayFinder.",
-      "startingLine": 516,
+      "startingLine": 518,
       "typeExpression": "!webdriver.promise.Promise",
       "type": {
         "type": "NameExpression",
@@ -1604,7 +1604,7 @@
         },
         "tagName": "param",
         "description": "Input function",
-        "startingLine": 556,
+        "startingLine": 558,
         "typeExpression": "function(ElementFinder)",
         "type": {
           "type": "FunctionType",
@@ -1635,7 +1635,7 @@
       },
       "tagName": "returns",
       "description": "A promise that will resolve when the function has been called on all the ElementFinders. The promise will resolve to null.",
-      "startingLine": 558,
+      "startingLine": 560,
       "typeExpression": "!webdriver.promise.Promise",
       "type": {
         "type": "NameExpression",
@@ -1671,7 +1671,7 @@
         },
         "tagName": "param",
         "description": "Map function that will be applied to each element.",
-        "startingLine": 609,
+        "startingLine": 611,
         "typeExpression": "function(ElementFinder, number)",
         "type": {
           "type": "FunctionType",
@@ -1706,7 +1706,7 @@
       },
       "tagName": "returns",
       "description": "A promise that resolves to an array of values returned by the map function.",
-      "startingLine": 611,
+      "startingLine": 613,
       "typeExpression": "!webdriver.promise.Promise",
       "type": {
         "type": "NameExpression",
@@ -1742,7 +1742,7 @@
         },
         "tagName": "param",
         "description": "Reduce function that reduces every element into a single\nvalue.",
-        "startingLine": 660,
+        "startingLine": 662,
         "typeExpression": "function(number, ElementFinder, number, Array.<ElementFinder>)",
         "type": {
           "type": "FunctionType",
@@ -1793,7 +1793,7 @@
         },
         "tagName": "param",
         "description": "Initial value of the accumulator.",
-        "startingLine": 663,
+        "startingLine": 665,
         "typeExpression": "*",
         "type": {
           "type": "AllLiteral"
@@ -1818,7 +1818,7 @@
       },
       "tagName": "returns",
       "description": "A promise that resolves to the final value of the accumulator.",
-      "startingLine": 664,
+      "startingLine": 666,
       "typeExpression": "!webdriver.promise.Promise",
       "type": {
         "type": "NameExpression",
@@ -1853,7 +1853,7 @@
         },
         "tagName": "param",
         "description": "",
-        "startingLine": 691,
+        "startingLine": 693,
         "typeExpression": "string",
         "type": {
           "type": "NameExpression",
@@ -1879,7 +1879,7 @@
       },
       "tagName": "returns",
       "description": "which resolves to the evaluated expression for each underlying element. The result will be resolved as in <code ng-non-bindable>webdriver.WebDriver.executeScript</code>. In summary - primitives will be resolved as is, functions will be converted to string, and elements will be returned as a WebElement.",
-      "startingLine": 693,
+      "startingLine": 695,
       "typeExpression": "ElementArrayFinder",
       "type": {
         "type": "NameExpression",
@@ -1912,7 +1912,7 @@
         },
         "tagName": "param",
         "description": "",
-        "startingLine": 708,
+        "startingLine": 710,
         "typeExpression": "string",
         "type": {
           "type": "NameExpression",
@@ -1938,7 +1938,7 @@
       },
       "tagName": "returns",
       "description": "which resolves to whether animation is\nallowed.",
-      "startingLine": 718,
+      "startingLine": 720,
       "typeExpression": "ElementArrayFinder",
       "type": {
         "type": "NameExpression",
@@ -1973,7 +1973,7 @@
         },
         "tagName": "param",
         "description": "A browser instance.",
-        "startingLine": 770,
+        "startingLine": 772,
         "typeExpression": "ProtractorBrowser",
         "type": {
           "type": "NameExpression",
@@ -1998,7 +1998,7 @@
         },
         "tagName": "param",
         "description": "The ElementArrayFinder that this is branched from.",
-        "startingLine": 771,
+        "startingLine": 773,
         "typeExpression": "ElementArrayFinder",
         "type": {
           "type": "NameExpression",
@@ -2024,7 +2024,7 @@
       },
       "tagName": "returns",
       "description": "",
-      "startingLine": 773,
+      "startingLine": 775,
       "typeExpression": "ElementFinder",
       "type": {
         "type": "NameExpression",
@@ -2055,7 +2055,7 @@
       },
       "tagName": "returns",
       "description": "A shallow copy of this.",
-      "startingLine": 841,
+      "startingLine": 843,
       "typeExpression": "!ElementFinder",
       "type": {
         "type": "NameExpression",
@@ -2086,7 +2086,7 @@
       },
       "tagName": "returns",
       "description": "",
-      "startingLine": 851,
+      "startingLine": 853,
       "typeExpression": "webdriver.Locator",
       "type": {
         "type": "NameExpression",
@@ -2119,7 +2119,7 @@
       },
       "tagName": "returns",
       "description": "",
-      "startingLine": 873,
+      "startingLine": 875,
       "typeExpression": "webdriver.WebElement",
       "type": {
         "type": "NameExpression",
@@ -2154,7 +2154,7 @@
         },
         "tagName": "param",
         "description": "",
-        "startingLine": 902,
+        "startingLine": 904,
         "typeExpression": "webdriver.Locator",
         "type": {
           "type": "NameExpression",
@@ -2180,7 +2180,7 @@
       },
       "tagName": "returns",
       "description": "",
-      "startingLine": 903,
+      "startingLine": 905,
       "typeExpression": "ElementArrayFinder",
       "type": {
         "type": "NameExpression",
@@ -2215,7 +2215,7 @@
         },
         "tagName": "param",
         "description": "",
-        "startingLine": 943,
+        "startingLine": 945,
         "typeExpression": "webdriver.Locator",
         "type": {
           "type": "NameExpression",
@@ -2241,7 +2241,7 @@
       },
       "tagName": "returns",
       "description": "",
-      "startingLine": 944,
+      "startingLine": 946,
       "typeExpression": "ElementFinder",
       "type": {
         "type": "NameExpression",
@@ -2276,7 +2276,7 @@
         },
         "tagName": "param",
         "description": "a css selector",
-        "startingLine": 970,
+        "startingLine": 972,
         "typeExpression": "string",
         "type": {
           "type": "NameExpression",
@@ -2302,7 +2302,7 @@
       },
       "tagName": "returns",
       "description": "",
-      "startingLine": 971,
+      "startingLine": 973,
       "typeExpression": "ElementArrayFinder",
       "type": {
         "type": "NameExpression",
@@ -2337,7 +2337,7 @@
         },
         "tagName": "param",
         "description": "A css selector",
-        "startingLine": 1011,
+        "startingLine": 1013,
         "typeExpression": "string",
         "type": {
           "type": "NameExpression",
@@ -2363,7 +2363,7 @@
       },
       "tagName": "returns",
       "description": "",
-      "startingLine": 1012,
+      "startingLine": 1014,
       "typeExpression": "ElementFinder",
       "type": {
         "type": "NameExpression",
@@ -2396,7 +2396,7 @@
       },
       "tagName": "returns",
       "description": "which resolves to whether the element is present on the page.",
-      "startingLine": 1030,
+      "startingLine": 1032,
       "typeExpression": "webdriver.promise.Promise<boolean>",
       "type": {
         "type": "TypeApplication",
@@ -2437,7 +2437,7 @@
         },
         "tagName": "param",
         "description": "Locator for element to look for.",
-        "startingLine": 1070,
+        "startingLine": 1072,
         "typeExpression": "webdriver.Locator",
         "type": {
           "type": "NameExpression",
@@ -2463,7 +2463,7 @@
       },
       "tagName": "returns",
       "description": "which resolves to whether the subelement is present on the page.",
-      "startingLine": 1071,
+      "startingLine": 1073,
       "typeExpression": "webdriver.promise.Promise<boolean>",
       "type": {
         "type": "TypeApplication",
@@ -2505,7 +2505,7 @@
         },
         "tagName": "param",
         "description": "",
-        "startingLine": 1092,
+        "startingLine": 1094,
         "typeExpression": "string",
         "type": {
           "type": "NameExpression",
@@ -2531,7 +2531,7 @@
       },
       "tagName": "returns",
       "description": "which resolves to the evaluated expression.",
-      "startingLine": 1094,
+      "startingLine": 1096,
       "typeExpression": "ElementFinder",
       "type": {
         "type": "NameExpression",
@@ -2563,7 +2563,7 @@
         },
         "tagName": "param",
         "description": "",
-        "startingLine": 1101,
+        "startingLine": 1103,
         "typeExpression": "string",
         "type": {
           "type": "NameExpression",
@@ -2589,7 +2589,7 @@
       },
       "tagName": "returns",
       "description": "which resolves to whether animation is allowed.",
-      "startingLine": 1103,
+      "startingLine": 1105,
       "typeExpression": "ElementFinder",
       "type": {
         "type": "NameExpression",
@@ -2620,7 +2620,7 @@
         },
         "tagName": "param",
         "description": "element to compare to.",
-        "startingLine": 1111,
+        "startingLine": 1113,
         "typeExpression": "!ElementFinder|!webdriver.WebElement",
         "type": {
           "type": "TypeUnion",
@@ -2658,7 +2658,7 @@
       },
       "tagName": "returns",
       "description": "A promise that will be resolved to whether the two WebElements are equal.",
-      "startingLine": 1113,
+      "startingLine": 1115,
       "typeExpression": "!webdriver.promise.Promise.<boolean>",
       "type": {
         "type": "TypeApplication",
@@ -3481,7 +3481,7 @@
         },
         "tagName": "param",
         "description": "An array of expected conditions to 'and'\ntogether.",
-        "startingLine": 108,
+        "startingLine": 109,
         "typeExpression": "Array.<Function>",
         "type": {
           "type": "TypeApplication",
@@ -3516,7 +3516,7 @@
       },
       "tagName": "returns",
       "description": "An expected condition that returns a promise which evaluates to the result of the logical and.",
-      "startingLine": 111,
+      "startingLine": 112,
       "typeExpression": "!function",
       "type": {
         "type": "FunctionType",
@@ -3550,7 +3550,7 @@
         },
         "tagName": "param",
         "description": "An array of expected conditions to 'or'\ntogether.",
-        "startingLine": 133,
+        "startingLine": 134,
         "typeExpression": "Array.<Function>",
         "type": {
           "type": "TypeApplication",
@@ -3585,7 +3585,7 @@
       },
       "tagName": "returns",
       "description": "An expected condition that returns a promise which evaluates to the result of the logical or.",
-      "startingLine": 136,
+      "startingLine": 137,
       "typeExpression": "!function",
       "type": {
         "type": "FunctionType",
@@ -3618,7 +3618,7 @@
       },
       "tagName": "returns",
       "description": "An expected condition that returns a promise representing whether an alert is present.",
-      "startingLine": 155,
+      "startingLine": 156,
       "typeExpression": "!function",
       "type": {
         "type": "FunctionType",
@@ -3652,7 +3652,7 @@
         },
         "tagName": "param",
         "description": "The element to check",
-        "startingLine": 183,
+        "startingLine": 184,
         "typeExpression": "!ElementFinder",
         "type": {
           "type": "NameExpression",
@@ -3679,7 +3679,7 @@
       },
       "tagName": "returns",
       "description": "An expected condition that returns a promise representing whether the element is clickable.",
-      "startingLine": 185,
+      "startingLine": 186,
       "typeExpression": "!function",
       "type": {
         "type": "FunctionType",
@@ -3713,7 +3713,7 @@
         },
         "tagName": "param",
         "description": "The element to check",
-        "startingLine": 201,
+        "startingLine": 202,
         "typeExpression": "!ElementFinder",
         "type": {
           "type": "NameExpression",
@@ -3739,7 +3739,7 @@
         },
         "tagName": "param",
         "description": "The text to verify against",
-        "startingLine": 202,
+        "startingLine": 203,
         "typeExpression": "!string",
         "type": {
           "type": "NameExpression",
@@ -3766,7 +3766,7 @@
       },
       "tagName": "returns",
       "description": "An expected condition that returns a promise representing whether the text is present in the element.",
-      "startingLine": 204,
+      "startingLine": 205,
       "typeExpression": "!function",
       "type": {
         "type": "FunctionType",
@@ -3800,7 +3800,7 @@
         },
         "tagName": "param",
         "description": "The element to check",
-        "startingLine": 227,
+        "startingLine": 228,
         "typeExpression": "!ElementFinder",
         "type": {
           "type": "NameExpression",
@@ -3826,7 +3826,7 @@
         },
         "tagName": "param",
         "description": "The text to verify against",
-        "startingLine": 228,
+        "startingLine": 229,
         "typeExpression": "!string",
         "type": {
           "type": "NameExpression",
@@ -3853,7 +3853,7 @@
       },
       "tagName": "returns",
       "description": "An expected condition that returns a promise representing whether the text is present in the element's value.",
-      "startingLine": 230,
+      "startingLine": 231,
       "typeExpression": "!function",
       "type": {
         "type": "FunctionType",
@@ -3887,7 +3887,7 @@
         },
         "tagName": "param",
         "description": "The fragment of title expected",
-        "startingLine": 251,
+        "startingLine": 252,
         "typeExpression": "!string",
         "type": {
           "type": "NameExpression",
@@ -3914,7 +3914,7 @@
       },
       "tagName": "returns",
       "description": "An expected condition that returns a promise representing whether the title contains the string.",
-      "startingLine": 253,
+      "startingLine": 254,
       "typeExpression": "!function",
       "type": {
         "type": "FunctionType",
@@ -3948,7 +3948,7 @@
         },
         "tagName": "param",
         "description": "The expected title, which must be an exact match.",
-        "startingLine": 273,
+        "startingLine": 274,
         "typeExpression": "!string",
         "type": {
           "type": "NameExpression",
@@ -3975,7 +3975,7 @@
       },
       "tagName": "returns",
       "description": "An expected condition that returns a promise representing whether the title equals the string.",
-      "startingLine": 275,
+      "startingLine": 276,
       "typeExpression": "!function",
       "type": {
         "type": "FunctionType",
@@ -4009,7 +4009,7 @@
         },
         "tagName": "param",
         "description": "The fragment of URL expected",
-        "startingLine": 296,
+        "startingLine": 297,
         "typeExpression": "!string",
         "type": {
           "type": "NameExpression",
@@ -4036,7 +4036,7 @@
       },
       "tagName": "returns",
       "description": "An expected condition that returns a promise representing whether the URL contains the string.",
-      "startingLine": 298,
+      "startingLine": 299,
       "typeExpression": "!function",
       "type": {
         "type": "FunctionType",
@@ -4070,7 +4070,7 @@
         },
         "tagName": "param",
         "description": "The expected URL, which must be an exact match.",
-        "startingLine": 318,
+        "startingLine": 319,
         "typeExpression": "!string",
         "type": {
           "type": "NameExpression",
@@ -4097,7 +4097,7 @@
       },
       "tagName": "returns",
       "description": "An expected condition that returns a promise representing whether the url equals the string.",
-      "startingLine": 320,
+      "startingLine": 321,
       "typeExpression": "!function",
       "type": {
         "type": "FunctionType",
@@ -4131,7 +4131,7 @@
         },
         "tagName": "param",
         "description": "The element to check",
-        "startingLine": 342,
+        "startingLine": 343,
         "typeExpression": "!ElementFinder",
         "type": {
           "type": "NameExpression",
@@ -4158,7 +4158,7 @@
       },
       "tagName": "returns",
       "description": "An expected condition that returns a promise representing whether the element is present.",
-      "startingLine": 344,
+      "startingLine": 345,
       "typeExpression": "!function",
       "type": {
         "type": "FunctionType",
@@ -4192,7 +4192,7 @@
         },
         "tagName": "param",
         "description": "The element to check",
-        "startingLine": 361,
+        "startingLine": 362,
         "typeExpression": "!ElementFinder",
         "type": {
           "type": "NameExpression",
@@ -4219,7 +4219,7 @@
       },
       "tagName": "returns",
       "description": "An expected condition that returns a promise representing whether the element is stale.",
-      "startingLine": 363,
+      "startingLine": 364,
       "typeExpression": "!function",
       "type": {
         "type": "FunctionType",
@@ -4253,7 +4253,7 @@
         },
         "tagName": "param",
         "description": "The element to check",
-        "startingLine": 382,
+        "startingLine": 383,
         "typeExpression": "!ElementFinder",
         "type": {
           "type": "NameExpression",
@@ -4280,7 +4280,7 @@
       },
       "tagName": "returns",
       "description": "An expected condition that returns a promise representing whether the element is visible.",
-      "startingLine": 384,
+      "startingLine": 385,
       "typeExpression": "!function",
       "type": {
         "type": "FunctionType",
@@ -4314,7 +4314,7 @@
         },
         "tagName": "param",
         "description": "The element to check",
-        "startingLine": 400,
+        "startingLine": 401,
         "typeExpression": "!ElementFinder",
         "type": {
           "type": "NameExpression",
@@ -4341,7 +4341,7 @@
       },
       "tagName": "returns",
       "description": "An expected condition that returns a promise representing whether the element is invisible.",
-      "startingLine": 402,
+      "startingLine": 403,
       "typeExpression": "!function",
       "type": {
         "type": "FunctionType",
@@ -4375,7 +4375,7 @@
         },
         "tagName": "param",
         "description": "The element to check",
-        "startingLine": 417,
+        "startingLine": 418,
         "typeExpression": "!ElementFinder",
         "type": {
           "type": "NameExpression",
@@ -4402,7 +4402,7 @@
       },
       "tagName": "returns",
       "description": "An expected condition that returns a promise representing whether the element is selected.",
-      "startingLine": 419,
+      "startingLine": 420,
       "typeExpression": "!function",
       "type": {
         "type": "FunctionType",
